@@ -85,3 +85,23 @@ input[type="number"] {
   padding: 2rem;
   text-align: center;
 }
+
+@media (max-width: 500px) {
+  .container,
+  .msg-tab {
+    width: 20rem;
+  }
+
+  label {
+    font-size: 0.9rem;
+  }
+
+  input[type="number"] {
+    height: 3rem;
+    width: 3.5rem;
+  }
+
+  .lead {
+    font-size: 0.9rem;
+  }
+}
