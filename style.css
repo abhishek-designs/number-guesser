@@ -1,0 +1,87 @@
+:root {
+  --primary-color: #e9ba62;
+  --lose-color: #e05c5c;
+  --win-color: #58b358;
+  --dark-color: #333;
+  --light-color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  line-height: 1.4;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.container {
+  width: 25rem;
+  margin: 2rem auto;
+  background-color: var(--light-color);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.head {
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  padding-bottom: 2rem;
+}
+
+.form-grp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  display: block;
+  padding-bottom: 1rem;
+}
+
+input[type="number"] {
+  height: 3rem;
+  width: 4rem;
+  padding: 0.3rem;
+  border: 3px solid orange;
+  border-radius: 10px;
+  outline: none;
+  color: orange;
+  /* transform: translate(-50%, -50%);
+  margin-left: 50%; */
+}
+
+.guess-btn {
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-color: orange;
+  color: var(--light-color);
+  width: 100%;
+  margin-top: 2rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.guess-btn:hover {
+  background-color: rgba(255, 165, 0, 0.8);
+}
+
+.msg-tab {
+  display: none;
+  width: 25rem;
+  margin: 0 auto;
+  background: var(--light-color);
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+}
