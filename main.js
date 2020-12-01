@@ -39,7 +39,10 @@ function guessNum(e) {
   } else if (guess === winningNum) {
     // If the inputted number is equals to the winning number : WE WIN
     // Show the message
-    showMsg("Congrats!! You win. Do you wanna play again ?", winColor);
+    showMsg(
+      `Congrats!! You win ${guess} is the correct number. Do you wanna play again ?`,
+      winColor
+    );
     // Restart the game
     restartGame();
   } else if (guess !== winningNum) {
@@ -50,7 +53,10 @@ function guessNum(e) {
     if (guessLeft === 0) {
       // We have zero guesses left we lose the game now play again
       // Show the message
-      showMsg("You lose the game! Better luck next time", loseColor);
+      showMsg(
+        `You lose the game! The correct number is ${winningNum}`,
+        loseColor
+      );
       // Restart the game
       restartGame();
     } else {
